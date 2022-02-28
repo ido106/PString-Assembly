@@ -1,4 +1,4 @@
-# PString in Assembly
+# PString library in Assembly
 In this task, we will implement *P-String library* in assembly language.  
 
 ### Background
