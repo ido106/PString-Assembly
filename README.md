@@ -20,7 +20,7 @@ The task contains 3 assembly files:
 
 ### Program structure
 The ```run_main``` function receives from the user two strings, their lengths and an option in the menu. Afterward, builds two Pstrings according to the strings and lengths recieved, and sends to run_func the menu option and the addresses of the Pstrings.  
-```run_func``` reads the menu option and uses jump table (equivalent to switch-case in C) to call the right libarary function, with the relevant prints.
+```run_func``` (from func_select.s file) reads the menu option and uses jump table (equivalent to switch-case in C) to call the right libarary function from ```pstring.s```, with the relevant prints.
 
 ### Library functions
 **```char pstrlen (Pstring* pstr)```**  
