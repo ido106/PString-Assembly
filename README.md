@@ -23,15 +23,19 @@ The ```run_main``` function receives from the user two strings, their lengths an
 ```run_func``` reads the menu option and uses jump table (equivalent to switch-case in C) to call the right libarary function, with the relevant prints.
 
 ### Library functions
-##### ```char pstrlen (Pstring* pstr)```  
-The function gets a pointer to a Pstring and returns the Pstring length.
-##### ```Pstring* replaceChar (Pstring* pstr, char oldChar, char newChar)```  
-The function receives a pointer to a Pstring and two chars, replaces every instance of oldChar with newChar, and returns the pointer to pstr.
-##### ```Pstring* pstrijcpy (Pstring* dst, Pstring* src, char i, char j)```
-The function receives two pointers to Pstring and two chars, copies the substring src[i:j] into dst[i:j], and returns the pointer to dst. If copying is not possible, dst is not changed and the message ```invalid input!``` is printed.
-##### ```Pstring* swapCase(Pstring* pstr)```
-The function receives a pointer to Pstring, and swaps every uppercase letter into lowercase, and every lowercase letter into uppercase. The string can contain non-letter characters.
-##### ```int pstrijcmp (Pstring* pstr1, Pstring* pstr2, char i, char j)```
+**```char pstrlen (Pstring* pstr)```**  
+The function gets a pointer to a Pstring and returns the Pstring length.  
+
+**```Pstring* replaceChar (Pstring* pstr, char oldChar, char newChar)```**  
+The function receives a pointer to a Pstring and two chars, replaces every instance of oldChar with newChar, and returns the pointer to pstr.  
+
+**```Pstring* pstrijcpy (Pstring* dst, Pstring* src, char i, char j)```**  
+The function receives two pointers to Pstring and two chars, copies the substring src[i:j] into dst[i:j], and returns the pointer to dst. If copying is not possible, dst is not changed and the message ```invalid input!``` is printed.  
+
+**```Pstring* swapCase(Pstring* pstr)```**  
+The function receives a pointer to Pstring, and swaps every uppercase letter into lowercase, and every lowercase letter into uppercase. The string can contain non-letter characters.  
+
+**```int pstrijcmp (Pstring* pstr1, Pstring* pstr2, char i, char j)```**  
 The function receives two pointers to Pstring, and compare pstr1[i:j] to pstr2[i:j]:
 1) returns 1 if pstr1[i:j] is larger than pstr2[i:j] lexicographically
 2) returns -1 if pstr2[i:j] is larger than pstr1[i:j] lexicographically
