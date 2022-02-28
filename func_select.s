@@ -1,4 +1,4 @@
-#   319024600 Ido Aharon
+#   Ido Aharon
 
     .section .rodata
     
